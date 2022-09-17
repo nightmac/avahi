@@ -1,0 +1,17 @@
+
+========================================
+Installing Indigo Server on Raspberry Pi
+========================================
+
+
+# prereqs
+
+sudo apt-get install build-essential autoconf autotools-dev libtool cmake libudev-dev libavahi-compat-libdnssd-dev libusb-1.0-0-dev libcurl4-gnutls-dev libz-dev git curl bsdmainutils
+sudo apt-get remove libraw1394-dev
+
+
+
+# indigo
+
+
+git clone https://github.com/indigo-astronomy/indigo.git && cd indigo && sudo make all && sudo make install
